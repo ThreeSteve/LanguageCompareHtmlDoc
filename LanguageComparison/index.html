@@ -5,112 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euro Swaps: Inflation and Interest Rates</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.8;
-            background-color: #f4f4f4;
-            font-size: 18px;
-        }
-
-        section {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: 120px 1fr; /* Two columns: icon (120px) and content (1fr) */
-            grid-gap: 20px;
-            align-items: start;
-        }
-
-        .icon-large {
-            grid-row: span 3;
-            max-width: 120px;
-            height: auto;
-        }
-
-        .content {
-            grid-column: 2;
-        }
-
-        h2, h3, p {
-            margin: 0;
-        }
-
-        h2 {
-            font-size: 24px;
-        }
-
-        h3 {
-            font-size: 18px;
-            color: #007BFF;
-            margin: 5px 0;
-        }
-
-        p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        /* Code block for Rust */
-        .code-block {
-            margin-top: 20px;
-        }
-
-            /* Titles for code blocks */
-            .code-block h4 {
-                font-size: 18px;
-                margin-bottom: 10px;
-                color: #333;
-            }
-
-        pre {
-            background-color: #f5f5f5;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        code {
-            white-space: pre-wrap;
-        }
-    </style>
-
-
-
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Updated Header with title and subtitle -->
+    <!-- Updated Header with ChatGPT icon and OpenAI link -->
     <header>
-        <h1>Euro Swaps</h1>
-        <h2>Inflation and Interest Rates</h2>
-        <h3>Multi-lingual Comparison</h3>
+        <div class="header-content">
+            <h1>Euro Swaps</h1>
+            <h2>Inflation and Interest Rates</h2>
+            <h3>Multi-lingual Comparison</h3>
+        </div>
+
     </header>
 
     <!-- Navigation with custom icons for all items -->
-    <nav>
+    <nav class="nav-center">
         <table>
             <tr>
                 <td><a href="#excel"><img src="images/Excel256x256.png" class="icon-large" alt="Excel Icon"> Excel</a></td>
                 <td><a href="#opendoc"><img src="images/ExcelOpenDoc256x256.png" class="icon-large" alt="OpenDoc Icon"> Excel OpenDoc 2005</a></td>
             </tr>
             <tr>
-                <td><a href="#xloper"><img src="images/ManagedXLL.png" class="icon-large" alt="XlOper Icon"> XlOper / ManagedXLL</a></td>
-                <td><a href="#json"><img src="images/json_icon.png" class="icon-large" alt="JSON Icon"> JSON</a></td>
+                <td><a href="#xloper"><img src="images/ManagedXLL256x256.png" class="icon-large" alt="XlOper Icon"> XlOper / ManagedXLL</a></td>
+                <td><a href="#json"><img src="images/JSON256x256.png" class="icon-large" alt="JSON Icon"> JSON</a></td>
             </tr>
             <tr>
-                <td><a href="#xml"><img src="images/xml_icon.png" class="icon-large" alt="XML Icon"> XML</a></td>
+                <td><a href="#xml"><img src="images/XML256x256.png" class="icon-large" alt="XML Icon"> XML</a></td>
                 <td><a href="#python"><img src="images/Python256x256.png" class="icon-large" alt="Python Icon"> Python</a></td>
             </tr>
             <tr>
@@ -119,7 +41,7 @@
             </tr>
             <tr>
                 <td><a href="#c"><img src="images/C256x256.png" class="icon-large" alt="C Icon"> C</a></td>
-                <td><a href="#rust"><img src="images/rust_icon.png" class="icon-large" alt="Rust Icon"> Rust</a></td>
+                <td><a href="#rust"><img src="images/Rust256x256.png" class="icon-large" alt="Rust Icon"> Rust</a></td>
             </tr>
         </table>
     </nav>
@@ -152,7 +74,9 @@
     <section id="opendoc">
         <div class="grid-container">
             <!-- Icon in the first column, spanning 3 rows -->
-            <img src="images/ExcelOpenDoc256x256.png" class="icon-large" alt="OpenDoc Icon">
+            <div>
+                <img src="images/ExcelOpenDoc256x256.png" class="icon-large" alt="OpenDoc Icon">
+            </div>
 
             <!-- Heading and content in the second column -->
             <div class="content">
@@ -173,22 +97,21 @@
                     <div class="code-block">
                         <h4>sharedStrings.xml</h4>
                         <pre><code>&lt;sst xmlns=&quot;http://schemas.openxmlformats.org/spreadsheetml/2006/main&quot; count=&quot;13&quot; uniqueCount=&quot;11&quot;&gt;
-    &lt;si&gt;
-        &lt;t&gt;Inflation&lt;/t&gt;
-    &lt;/si&gt;
-    &lt;si&gt;
-        &lt;t&gt;IRS&lt;/t&gt;
-    &lt;/si&gt;
-    &lt;si&gt;
-        &lt;t&gt;Swap&lt;/t&gt;
-    &lt;/si&gt;
-    &lt;si&gt;
-        &lt;t&gt;Euribor&lt;/t&gt;
-    &lt;/si&gt;
-    &lt;si&gt;
-        &lt;t&gt;Euro HICP&lt;/t&gt;
-    &lt;/si&gt;
-    <!-- Additional code here -->
+&lt;si&gt;
+    &lt;t&gt;Inflation&lt;/t&gt;
+&lt;/si&gt;
+&lt;si&gt;
+    &lt;t&gt;IRS&lt;/t&gt;
+&lt;/si&gt;
+&lt;si&gt;
+    &lt;t&gt;Swap&lt;/t&gt;
+&lt;/si&gt;
+&lt;si&gt;
+    &lt;t&gt;Euribor&lt;/t&gt;
+&lt;/si&gt;
+&lt;si&gt;
+    &lt;t&gt;Euro HICP&lt;/t&gt;
+&lt;/si&gt;
 &lt;/sst&gt;
                     </code></pre>
                     </div>
@@ -197,22 +120,22 @@
                     <div class="code-block">
                         <h4>worksheets\sheet1.xml</h4>
                         <pre><code>&lt;worksheet xmlns=&quot;http://schemas.openxmlformats.org/&quot;&gt;
-    &lt;dimension ref=&quot;A1:D8&quot;/&gt;
+&lt;dimension ref=&quot;A1:D8&quot;/&gt;
 
-    &lt;row r=&quot;4&quot; spans=&quot;1:4&quot; ht=&quot;15&quot; thickBot=&quot;1&quot; x14ac:dyDescent=&quot;0.4&quot;&gt;
-        &lt;c r=&quot;A4&quot; s=&quot;2&quot; t=&quot;s&quot;&gt;
-            &lt;v&gt;7&lt;/v&gt;
-        &lt;/c&gt;
-        &lt;c r=&quot;B4&quot; s=&quot;3&quot;&gt;
-            &lt;v&gt;1.807&lt;/v&gt;
-        &lt;/c&gt;
-        &lt;c r=&quot;C4&quot; s=&quot;3&quot;&gt;
-            &lt;v&gt;2.398&lt;/v&gt;
-        &lt;/c&gt;
-        &lt;c r=&quot;D4&quot; s=&quot;3&quot;&gt;
-            &lt;v&gt;2.455&lt;/v&gt;
-        &lt;/c&gt;
-    &lt;/row&gt;
+&lt;row r=&quot;4&quot; spans=&quot;1:4&quot; ht=&quot;15&quot; thickBot=&quot;1&quot; x14ac:dyDescent=&quot;0.4&quot;&gt;
+    &lt;c r=&quot;A4&quot; s=&quot;2&quot; t=&quot;s&quot;&gt;
+        &lt;v&gt;7&lt;/v&gt;
+    &lt;/c&gt;
+    &lt;c r=&quot;B4&quot; s=&quot;3&quot;&gt;
+        &lt;v&gt;1.807&lt;/v&gt;
+    &lt;/c&gt;
+    &lt;c r=&quot;C4&quot; s=&quot;3&quot;&gt;
+        &lt;v&gt;2.398&lt;/v&gt;
+    &lt;/c&gt;
+    &lt;c r=&quot;D4&quot; s=&quot;3&quot;&gt;
+        &lt;v&gt;2.455&lt;/v&gt;
+    &lt;/c&gt;
+&lt;/row&gt;
 &lt;/worksheet&gt;
                     </code></pre>
                     </div>
@@ -220,6 +143,7 @@
             </div>
         </div>
     </section>
+
 
 
 
@@ -258,7 +182,7 @@
     <section id="json">
         <div class="grid-container">
             <!-- Icon in the first column, spanning 3 rows -->
-            <img src="images/json_icon.png" class="icon-large" alt="JSON Icon">
+            <img src="images/JSON256x256.png" class="icon-large" alt="JSON Icon">
 
             <!-- Heading and content in the second column -->
             <div class="content">
@@ -308,7 +232,7 @@
     <section id="xml">
         <div class="grid-container">
             <!-- Icon in the first column, spanning 3 rows -->
-            <img src="images/xml_icon.png" class="icon-large" alt="XML Icon">
+            <img src="images/XML256x256.png" class="icon-large" alt="XML Icon">
 
             <!-- Heading and content in the second column -->
             <div class="content">
@@ -526,7 +450,7 @@ int main() {
     <section id="rust">
         <div class="grid-container">
             <!-- Icon in the first column, spanning 3 rows -->
-            <img src="images/rust_icon.png" class="icon-large" alt="Rust Icon">
+            <img src="images/Rust256x256.png" class="icon-large" alt="Rust Icon">
 
             <!-- Heading and content in the second column -->
             <div class="content">

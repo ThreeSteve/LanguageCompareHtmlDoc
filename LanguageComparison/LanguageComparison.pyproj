@@ -11,9 +11,11 @@
     <Compile Include="serve.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="styles.css" />
     <Content Include="openAI.html" />
     <Content Include="index.html" />
     <Content Include="images\*.png" />
+    <Content Include="images\*.jpg" />
     <!-- This will include all PNG images in the images folder -->
   </ItemGroup>
   <ItemGroup>
