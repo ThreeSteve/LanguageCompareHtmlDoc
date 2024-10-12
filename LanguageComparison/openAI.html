@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Format Comparison Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+            background-color: #f4f4f4;
+            font-size: 28px; /* Increased font size */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+            table td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                text-align: center;
+            }
+
+            table a {
+                text-decoration: none;
+                color: #007BFF;
+            }
+
+                table a:hover {
+                    text-decoration: underline;
+                }
+
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            section img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        /* Icon styling */
+        .icon {
+            max-width: 30px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .icon {
+                max-width: 40px;
+            }
+        }
+
+        nav {
+            margin-bottom: 40px;
+        }
+
+            nav table {
+                width: 100%;
+            }
+
+                nav table td {
+                    padding: 15px;
+                    background-color: #f0f0f0;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                }
+
+                    nav table td a {
+                        font-weight: bold;
+                    }
+    </style>
+</head>
+<body>
+
+    <!-- Title image -->
+    <header>
+        <img src="your_title_image.png" alt="Data Format Comparison Viewer" style="max-width: 100%; height: auto;">
+        <h1>Data Format Comparison Viewer</h1>
+    </header>
+
+    <!-- Navigation with custom icons for all items -->
+    <nav>
+        <table>
+            <tr>
+                <td><a href="#excel"><img src="excel_icon.png" class="icon" alt="Excel Icon"> Excel</a></td>
+                <td><a href="#opendoc"><img src="opendoc_icon.png" class="icon" alt="OpenDoc Icon"> Excel OpenDoc 2005</a></td>
+            </tr>
+            <tr>
+                <td><a href="#managedxll"><img src="xloper_icon.png" class="icon" alt="XlOper Icon"> XlOper / ManagedXLL</a></td>
+                <td><a href="#json"><img src="json_icon.png" class="icon" alt="JSON Icon"> JSON</a></td>
+            </tr>
+            <tr>
+                <td><a href="#xml"><img src="xml_icon.png" class="icon" alt="XML Icon"> XML</a></td>
+                <td><a href="#python"><img src="python_icon.png" class="icon" alt="Python Icon"> Python</a></td>
+            </tr>
+            <tr>
+                <td><a href="#csharp"><img src="csharp_icon.png" class="icon" alt="C# Icon"> C#</a></td>
+                <td><a href="#cpp"><img src="cpp_icon.png" class="icon" alt="C++ Icon"> C++</a></td>
+            </tr>
+            <tr>
+                <td><a href="#c"><img src="c_icon.png" class="icon" alt="C Icon"> C</a></td>
+                <td><a href="#rust"><img src="rust_icon.png" class="icon" alt="Rust Icon"> Rust</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- Sections -->
+    <section id="excel">
+        <h2>Excel</h2>
+        <h3>(Inception: 1985)</h3>
+        <p>A representation of data in the Excel format, including various cell types and structures.</p>
+        <img src="Euro-Inflation-Irs-Excel.png" alt="Excel format image">
+    </section>
+
+    <section id="opendoc">
+        <h2>Excel OpenDoc 2005</h2>
+        <p>A representation of how the data might look in the OpenDocument format for Excel.</p>
+        <img src="Euro-Inflation-Irs-Excel.png" alt="OpenDoc format image">
+    </section>
+
+    <section id="managedxll">
+        <h2>XlOper / ManagedXLL (Inception: 2000)</h2>
+        <p>XlOper / ManagedXLL: The C# format commonly used in Excel-related programming.</p>
+        <img src="xloper_image.jpg" alt="ManagedXLL format image">
+    </section>
+
+    <section id="json">
+        <h2>JSON (Inception: 2001)</h2>
+        <p>JSON: The same data in JSON format, widely used in web applications for data interchange.</p>
+        <img src="json_image.jpg" alt="JSON format image">
+    </section>
+
+    <section id="xml">
+        <h2>XML (Inception: 1998)</h2>
+        <p>XML: The same data in XML format, commonly used for data representation in various systems.</p>
+        <img src="xml_image.jpg" alt="XML format image">
+    </section>
+
+    <section id="python">
+        <h2>Python (Inception: 1991)</h2>
+        <p>Python: The data structured as a Python dictionary for use in Python programming.</p>
+        <img src="python_image.jpg" alt="Python image">
+    </section>
+
+    <section id="csharp">
+        <h2>C# (Inception: 2000)</h2>
+        <p>C#: The data as a dictionary structure in C# programming.</p>
+        <img src="csharp_image.jpg" alt="C# image">
+    </section>
+
+    <section id="cpp">
+        <h2>C++ (Inception: 1985)</h2>
+        <p>C++: Using unordered_map and vector to represent data in C++.</p>
+        <img src="cpp_image.jpg" alt="C++ image">
+    </section>
+
+    <section id="c">
+        <h2>C (Inception: 1972)</h2>
+        <p>C: Using standard C data structures to represent the data in C.</p>
+        <img src="c_image.jpg" alt="C image">
+    </section>
+
+    <section id="rust">
+        <h2>Rust (Inception: 2010)</h2>
+        <p>Rust: Using HashMap and Vec to represent data in Rust programming.</p>
+        <img src="rust_image.jpg" alt="Rust image">
+    </section>
+
+</body>
+</html>

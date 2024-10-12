@@ -1,0 +1,25 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>serve.py</StartupFile>
+    <SearchPath>.</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Standard Python Launcher</LaunchProvider>
+    <ProjectGuid>{1087197a-19eb-490c-99d4-5057810adb38}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="serve.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="openAI.html" />
+    <Content Include="index.html" />
+    <Content Include="images\*.png" />
+    <!-- This will include all PNG images in the images folder -->
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="PythonCore|3.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+</Project>

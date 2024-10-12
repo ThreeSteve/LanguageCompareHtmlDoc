@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Swaps: Inflation and Interest Rates</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+            background-color: #f4f4f4;
+            font-size: 18px;
+        }
+
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 120px 1fr; /* Two columns: icon (120px) and content (1fr) */
+            grid-gap: 20px;
+            align-items: start;
+        }
+
+        .icon-large {
+            grid-row: span 3;
+            max-width: 120px;
+            height: auto;
+        }
+
+        .content {
+            grid-column: 2;
+        }
+
+        h2, h3, p {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #007BFF;
+            margin: 5px 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Code block for Rust */
+        .code-block {
+            margin-top: 20px;
+        }
+
+            /* Titles for code blocks */
+            .code-block h4 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        code {
+            white-space: pre-wrap;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <!-- Updated Header with title and subtitle -->
+    <header>
+        <h1>Euro Swaps</h1>
+        <h2>Inflation and Interest Rates</h2>
+        <h3>Multi-lingual Comparison</h3>
+    </header>
+
+    <!-- Navigation with custom icons for all items -->
+    <nav>
+        <table>
+            <tr>
+                <td><a href="#excel"><img src="images/Excel256x256.png" class="icon-large" alt="Excel Icon"> Excel</a></td>
+                <td><a href="#opendoc"><img src="images/ExcelOpenDoc256x256.png" class="icon-large" alt="OpenDoc Icon"> Excel OpenDoc 2005</a></td>
+            </tr>
+            <tr>
+                <td><a href="#xloper"><img src="images/ManagedXLL.png" class="icon-large" alt="XlOper Icon"> XlOper / ManagedXLL</a></td>
+                <td><a href="#json"><img src="images/json_icon.png" class="icon-large" alt="JSON Icon"> JSON</a></td>
+            </tr>
+            <tr>
+                <td><a href="#xml"><img src="images/xml_icon.png" class="icon-large" alt="XML Icon"> XML</a></td>
+                <td><a href="#python"><img src="images/Python256x256.png" class="icon-large" alt="Python Icon"> Python</a></td>
+            </tr>
+            <tr>
+                <td><a href="#csharp"><img src="images/CSharp256x256.png" class="icon-large" alt="C# Icon"> C#</a></td>
+                <td><a href="#cpp"><img src="images/CPlusPlus256x256.png" class="icon-large" alt="C++ Icon"> C++</a></td>
+            </tr>
+            <tr>
+                <td><a href="#c"><img src="images/C256x256.png" class="icon-large" alt="C Icon"> C</a></td>
+                <td><a href="#rust"><img src="images/rust_icon.png" class="icon-large" alt="Rust Icon"> Rust</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- Sections -->
+    <!-- Sections -->
+    <section id="excel">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/Excel256x256.png" class="icon-large" alt="Excel Icon">
+
+            <!-- Heading in the second column -->
+            <div class="content">
+                <h2>Excel</h2>
+                <h3>(Inception: 1985)</h3>
+                <p>A representation of data in the Excel format, including various cell types and structures.</p>
+
+                <!-- Additional paragraph and image, both aligned with the content -->
+                <p class="additional-text">
+                    Standard Excel - Here using images into spanned top left cell <br>
+                    (Excel 365 or Excel 2024 Only)
+                </p>
+
+                <img src="images/Euro-Inflation-Irs-Excel.png" alt="Excel format image" class="content-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections -->
+    <section id="opendoc">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/ExcelOpenDoc256x256.png" class="icon-large" alt="OpenDoc Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>Excel OpenDoc</h2>
+                <h3>(Inception: 2005)</h3>
+                <p>A representation of how the data might look in the OpenDocument format for Excel.</p>
+
+                <!-- Additional paragraph, aligned with the content -->
+                <p class="additional-text">
+                    The OpenDocument format allows for interoperability between office suites <br>
+                    (Compatible with OpenOffice and LibreOffice)<br>
+                    Here is how our Inflation and Interest Rate Swap Excel Sheet looks when unzipped in OpenDoc Format
+                </p>
+
+                <!-- Side-by-side code blocks aligned below the last paragraph -->
+                <div class="code-blocks">
+                    <!-- Left code block with actual XML code -->
+                    <div class="code-block">
+                        <h4>sharedStrings.xml</h4>
+                        <pre><code>&lt;sst xmlns=&quot;http://schemas.openxmlformats.org/spreadsheetml/2006/main&quot; count=&quot;13&quot; uniqueCount=&quot;11&quot;&gt;
+    &lt;si&gt;
+        &lt;t&gt;Inflation&lt;/t&gt;
+    &lt;/si&gt;
+    &lt;si&gt;
+        &lt;t&gt;IRS&lt;/t&gt;
+    &lt;/si&gt;
+    &lt;si&gt;
+        &lt;t&gt;Swap&lt;/t&gt;
+    &lt;/si&gt;
+    &lt;si&gt;
+        &lt;t&gt;Euribor&lt;/t&gt;
+    &lt;/si&gt;
+    &lt;si&gt;
+        &lt;t&gt;Euro HICP&lt;/t&gt;
+    &lt;/si&gt;
+    <!-- Additional code here -->
+&lt;/sst&gt;
+                    </code></pre>
+                    </div>
+
+                    <!-- Right code block with actual XML code -->
+                    <div class="code-block">
+                        <h4>worksheets\sheet1.xml</h4>
+                        <pre><code>&lt;worksheet xmlns=&quot;http://schemas.openxmlformats.org/&quot;&gt;
+    &lt;dimension ref=&quot;A1:D8&quot;/&gt;
+
+    &lt;row r=&quot;4&quot; spans=&quot;1:4&quot; ht=&quot;15&quot; thickBot=&quot;1&quot; x14ac:dyDescent=&quot;0.4&quot;&gt;
+        &lt;c r=&quot;A4&quot; s=&quot;2&quot; t=&quot;s&quot;&gt;
+            &lt;v&gt;7&lt;/v&gt;
+        &lt;/c&gt;
+        &lt;c r=&quot;B4&quot; s=&quot;3&quot;&gt;
+            &lt;v&gt;1.807&lt;/v&gt;
+        &lt;/c&gt;
+        &lt;c r=&quot;C4&quot; s=&quot;3&quot;&gt;
+            &lt;v&gt;2.398&lt;/v&gt;
+        &lt;/c&gt;
+        &lt;c r=&quot;D4&quot; s=&quot;3&quot;&gt;
+            &lt;v&gt;2.455&lt;/v&gt;
+        &lt;/c&gt;
+    &lt;/row&gt;
+&lt;/worksheet&gt;
+                    </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sections -->
+    <section id="managedxll">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/ManagedXLL256x256.png" class="icon-large" alt="ManagedXLL Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>XlOper / ManagedXLL</h2>
+                <h3>(Inception: 2000)</h3>
+                <p>ManagedXLL provides interoperability for Excel and allows you to create custom Excel functions using C# code.</p>
+
+                <!-- C# code block -->
+                <div class="code-block">
+                    <h4>C# Code - ManagedXLL</h4>
+                    <pre><code>var xloperSwapData = new XlOper[,]
+{
+    { "",       "Inflation",  "IRS",        "IRS"      },
+    { "",       "Swap",       "Euribor",    "Euribor"  },
+    { "",       "Euro HICP",  "3 Month",    "6 Month"  },
+    { "2Y",     1.807,        2.397,        2.455      },
+    { "3Y",     1.850,        2.334,        2.388      },
+    { "5Y",     1.938,        2.336,        2.381      },
+    { "10Y",    2.077,        2.465,        2.479      },
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sections -->
+    <section id="json">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/json_icon.png" class="icon-large" alt="JSON Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>JSON</h2>
+                <h3>(Inception: 2001)</h3>
+                <p>JSON (JavaScript Object Notation) is a lightweight format for storing and transporting data, commonly used in web applications and APIs.</p>
+
+                <!-- JSON code block -->
+                <div class="code-block">
+                    <h4>JSON Data Example</h4>
+                    <pre><code>{
+  "tenors": [
+    {
+      "tenor": "2Y",
+      "InflationValue": 1.807,
+      "SwapEuribor3M": 2.397,
+      "SwapEuribor6M": 2.455
+    },
+    {
+      "tenor": "3Y",
+      "InflationValue": 1.850,
+      "SwapEuribor3M": 2.334,
+      "SwapEuribor6M": 2.388
+    },
+    {
+      "tenor": "5Y",
+      "InflationValue": 1.938,
+      "SwapEuribor3M": 2.336,
+      "SwapEuribor6M": 2.381
+    },
+    {
+      "tenor": "10Y",
+      "InflationValue": 2.077,
+      "SwapEuribor3M": 2.465,
+      "SwapEuribor6M": 2.479
+    }
+  ]
+}
+                </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sections -->
+    <section id="xml">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/xml_icon.png" class="icon-large" alt="XML Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>XML</h2>
+                <h3>(Inception: 1998)</h3>
+                <p>XML (Extensible Markup Language) is used for defining rules for encoding documents in a format that is both human-readable and machine-readable.</p>
+
+                <!-- XML code block -->
+                <div class="code-block">
+                    <h4>XML Data Example</h4>
+                    <pre><code>&lt;tenors&gt;
+  &lt;tenor name=&quot;2Y&quot;&gt;
+    &lt;InflationValue&gt;1.807&lt;/InflationValue&gt;
+    &lt;SwapEuribor3M&gt;2.397&lt;/SwapEuribor3M&gt;
+    &lt;SwapEuribor6M&gt;2.455&lt;/SwapEuribor6M&gt;
+  &lt;/tenor&gt;
+  &lt;tenor name=&quot;3Y&quot;&gt;
+    &lt;InflationValue&gt;1.850&lt;/InflationValue&gt;
+    &lt;SwapEuribor3M&gt;2.334&lt;/SwapEuribor3M&gt;
+    &lt;SwapEuribor6M&gt;2.388&lt;/SwapEuribor6M&gt;
+  &lt;/tenor&gt;
+  &lt;tenor name=&quot;5Y&quot;&gt;
+    &lt;InflationValue&gt;1.938&lt;/InflationValue&gt;
+    &lt;SwapEuribor3M&gt;2.336&lt;/SwapEuribor3M&gt;
+    &lt;SwapEuribor6M&gt;2.381&lt;/SwapEuribor6M&gt;
+  &lt;/tenor&gt;
+  &lt;tenor name=&quot;10Y&quot;&gt;
+    &lt;InflationValue&gt;2.077&lt;/InflationValue&gt;
+    &lt;SwapEuribor3M&gt;2.465&lt;/SwapEuribor3M&gt;
+    &lt;SwapEuribor6M&gt;2.479&lt;/SwapEuribor6M&gt;
+  &lt;/tenor&gt;
+&lt;/tenors&gt;
+                </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sections -->
+    <section id="python">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/Python256x256.png" class="icon-large" alt="Python Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>Python</h2>
+                <h3>(Inception: 1991)</h3>
+                <p>Python is a high-level, interpreted programming language known for its readability and versatility, widely used in data analysis, AI, and web development.</p>
+
+                <!-- Python code block -->
+                <div class="code-block">
+                    <h4>Python Data Example</h4>
+                    <pre><code>tenors = [
+    {
+        "tenor": "2Y",
+        "InflationValue": 1.807,
+        "SwapEuribor3M": 2.397,
+        "SwapEuribor6M": 2.455
+    },
+    {
+        "tenor": "3Y",
+        "InflationValue": 1.850,
+        "SwapEuribor3M": 2.334,
+        "SwapEuribor6M": 2.388
+    },
+    {
+        "tenor": "5Y",
+        "InflationValue": 1.938,
+        "SwapEuribor3M": 2.336,
+        "SwapEuribor6M": 2.381
+    },
+    {
+        "tenor": "10Y",
+        "InflationValue": 2.077,
+        "SwapEuribor3M": 2.465,
+        "SwapEuribor6M": 2.479
+    }
+]</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections -->
+    <section id="csharp">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/CSharp256x256.png" class="icon-large" alt="C# Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>C#</h2>
+                <h3>(Inception: 2000)</h3>
+                <p>C# is a modern, object-oriented programming language used for a wide variety of applications, particularly in the .NET ecosystem.</p>
+
+                <!-- C# code block -->
+                <div class="code-block">
+                    <h4>C# Data Example</h4>
+                    <pre><code>using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        var tenors = new List&lt;dynamic&gt;
+        {
+            new { Tenor = "2Y", InflationValue = 1.807, SwapEuribor3M = 2.397, SwapEuribor6M = 2.455 },
+            new { Tenor = "3Y", InflationValue = 1.850, SwapEuribor3M = 2.334, SwapEuribor6M = 2.388 },
+            new { Tenor = "5Y", InflationValue = 1.938, SwapEuribor3M = 2.336, SwapEuribor6M = 2.381 },
+            new { Tenor = "10Y", InflationValue = 2.077, SwapEuribor3M = 2.465, SwapEuribor6M = 2.479 }
+        };
+
+        // Example to print the first tenor's InflationValue
+        Console.WriteLine($"Tenor {tenors[0].Tenor}: Inflation Value = {tenors[0].InflationValue}");
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sections -->
+    <section id="cpp">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/CPlusPlus256x256.png" class="icon-large" alt="C++ Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>C++</h2>
+                <h3>(Inception: 1985)</h3>
+                <p>C++ is a high-performance programming language used for system-level programming, game development, and applications where low-level memory manipulation is critical.</p>
+
+                <!-- C++ code block -->
+                <div class="code-block">
+                    <h4>C++ Data Example</h4>
+                    <pre><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;string&gt;
+
+struct Tenor {
+    std::string tenor;
+    double InflationValue;
+    double SwapEuribor3M;
+    double SwapEuribor6M;
+};
+
+std::vector&lt;Tenor&gt; tenors = {
+    {"2Y", 1.807, 2.397, 2.455},
+    {"3Y", 1.850, 2.334, 2.388},
+    {"5Y", 1.938, 2.336, 2.381},
+    {"10Y", 2.077, 2.465, 2.479}
+};
+
+int main() {
+    // Example to print the first tenor's InflationValue
+    std::cout &lt;&lt; "Tenor " &lt;&lt; tenors[0].tenor &lt;&lt; ": Inflation Value = " &lt;&lt; tenors[0].InflationValue &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sections -->
+    <section id="c">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/C256x256.png" class="icon-large" alt="C Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>C</h2>
+                <h3>(Inception: 1972)</h3>
+                <p>C is a general-purpose, procedural programming language that is widely used for system programming and embedded systems.</p>
+
+                <!-- C code block -->
+                <div class="code-block">
+                    <h4>C Data Example</h4>
+                    <pre><code>#include &lt;stdio.h&gt;
+
+struct Tenor {
+    char* tenor;
+    double InflationValue;
+    double SwapEuribor3M;
+    double SwapEuribor6M;
+};
+
+struct Tenor tenors[] = {
+    {"2Y", 1.807, 2.397, 2.455},
+    {"3Y", 1.850, 2.334, 2.388},
+    {"5Y", 1.938, 2.336, 2.381},
+    {"10Y", 2.077, 2.465, 2.479}
+};
+
+int main() {
+    // Example to print the first tenor's InflationValue
+    printf("Tenor %s: Inflation Value = %f\n", tenors[0].tenor, tenors[0].InflationValue);
+    return 0;
+}
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sections -->
+    <section id="rust">
+        <div class="grid-container">
+            <!-- Icon in the first column, spanning 3 rows -->
+            <img src="images/rust_icon.png" class="icon-large" alt="Rust Icon">
+
+            <!-- Heading and content in the second column -->
+            <div class="content">
+                <h2>Rust</h2>
+                <h3>(Inception: 2010)</h3>
+                <p>Rust is a systems programming language focused on safety and performance, especially with concurrency. It ensures memory safety without a garbage collector.</p>
+
+                <!-- Rust code block -->
+                <div class="code-block">
+                    <h4>Rust Data Example</h4>
+                    <pre><code>struct Tenor {
+    tenor: &'static str,
+    inflation_value: f64,
+    swap_euribor_3m: f64,
+    swap_euribor_6m: f64,
+}
+
+fn main() {
+    let tenors = vec![
+        Tenor { tenor: "2Y", inflation_value: 1.807, swap_euribor_3m: 2.397, swap_euribor_6m: 2.455 },
+        Tenor { tenor: "3Y", inflation_value: 1.850, swap_euribor_3m: 2.334, swap_euribor_6m: 2.388 },
+        Tenor { tenor: "5Y", inflation_value: 1.938, swap_euribor_3m: 2.336, swap_euribor_6m: 2.381 },
+        Tenor { tenor: "10Y", inflation_value: 2.077, swap_euribor_3m: 2.465, swap_euribor_6m: 2.479 },
+    ];
+
+    // Example to print the first tenor's InflationValue
+    println!("Tenor {}: Inflation Value = {}", tenors[0].tenor, tenors[0].inflation_value);
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
